@@ -5,7 +5,7 @@ import setuptools
 
 setuptools.setup(
     name = "ghsu",
-    version = "0.0.1",
+    version = "0.1.0",
     author = "Karime Maamari",
     author_email = "maamari@usc.edu",
     description = ("An automated Github account setup tool."),
