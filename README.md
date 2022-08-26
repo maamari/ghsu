@@ -67,7 +67,7 @@ _If you have already set up a Github account and SSH key, but have not yet creat
 ghsurepo
 ```
 
-### What the frick is the script actually doing?
+### What is the script actually doing?
 
 1. Creates your account
 2. Sets up your SSH key
