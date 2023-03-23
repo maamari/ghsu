@@ -4,15 +4,15 @@ import setuptools
 #    long_description = fh.read()
 
 setuptools.setup(
-    name = "ghsu",
-    version = "0.1.0",
-    author = "Karime Maamari",
+    name = "inviz",
+    version = "0.0.1",
+    author = "James Wen",
     author_email = "maamari@usc.edu",
-    description = ("An automated Github account setup tool."),
+    description = ("An interactive visualizer to help explore the results of running MCMC posterior sampling on a cosmological model."),
     license = "MIT",
-    keywords = "github account setup",
-    url = "http://packages.python.org/ghsu",
-    packages=['ghsu'],
+    keywords = "interactive visualizer cosmology",
+    url = "http://packages.python.org/inviz",
+    package_dir={'': 'inviz'},
     #long_description=long_description,
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -20,9 +20,8 @@ setuptools.setup(
         "Operating System :: POSIX :: Linux",
     ],
     python_requires='>=3.6',              
-    install_requires=["selenium>=4.3.0",
-                      "webdriver_manager>=3.8.2"],                    
-     entry_points={
-         'console_scripts': ['ghsu = ghsu.ghsu:main', 'ghsussh = ghsu.ghsu:set_ssh', 'ghsurepo = ghsu.ghsu:create_repo'],
-     }
+    install_requires=["holoviews==1.15.4",
+                      "spatialpandas==0.4.7",
+                      "hvplot==0.8.3",
+                      "numpy==1.23.5"]                    
     )
